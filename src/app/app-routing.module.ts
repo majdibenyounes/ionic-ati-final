@@ -4,7 +4,7 @@ import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
 const routes: Routes = [
   {
     path: '',
-    redirectTo: 'annonce',
+    redirectTo: 'form',
     pathMatch: 'full'
   },
   {
@@ -29,13 +29,9 @@ const routes: Routes = [
   },
   {
     path: 'login',
-    loadChildren: './login/login.module#LoginPageModule' 
+    loadChildren: './login/login.module#LoginPageModule'
   },
-  { path: 'reclamation', 
-  loadChildren: './reclamation/reclamation.module#ReclamationPageModule' },
-  
-  { path: 'demande',
-   loadChildren: './demande/demande.module#DemandePageModule' },
+
 ];
 
 @NgModule({
